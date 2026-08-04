@@ -653,13 +653,248 @@ Number of people  Minimum age  Maximum age
 
 7.	A schematic for converting phone letters to digits mapping is shown in the image below. Write a Python program that prompts the user to enter a 10-character phone number in this format `XXX-XXXXXXX`. Your program should replace the last seven alphabetic characters by their equivalent digits and display the entered phone number in this format `XXX-XXX-XXXX`. For example, if the user enters `800-GOFEDEX`, your program output would convert the number to `800-463-3339`. You may assume that the last seven characters are alphabetic characters from A to Z.
 
+![New #ios6 dial pad design | Jakob Montrasio | Flickr](exam1_practice_prob_7.jpg)
+
 Example output for input `800-GOFEDEX`:
 ```
 Enter a phone number in this format XXX-XXXXXXX: 800-GOFEDEX
 800-GOFEDEX is equivalent to 800-463-3339
 ```
 
+8.	Write a Python program that takes in an integer between one hundred and one million, inclusive. You may assume the user always enters an integer. If the user enters a value outside the interval, print an error message. For any valid input, check the last two digits in the number: if both are even, print their sum; if both are odd, print their product. Otherwise, print `One odd, one even!`
 
+You may use the built-in `len()` function. Do **NOT** use loops, lists/tuples, or the `sort()` and `sorted()` functions, or any of the string class methods. Use good coding practices.
+
+Example output using input values `15`, `157`, `3468`, and `12345`:
+```
+Enter an integer between 100 and 1000000, inclusive: 15 
+Wrong input!
+```
+```
+Enter an integer between 100 and 1000000, inclusive: 157 
+Both odd! 
+Product = 35
+```
+```
+Enter an integer between 100 and 1000000, inclusive: 3468 
+Both even! 
+Sum = 14
+```
+```
+Enter an integer between 100 and 1000000, inclusive: 12345 
+One odd, one even.
+```
+
+9.	Write a Python program that takes as input a value of `n` (`n` is a positive integer) and then calculates and prints the sum of `n + nn + nnn`. For example, if `n = 12`, the sum is `12 + 1212 + 121212 = 122436`; if `n = 1`, the sum is `1 + 11 + 111 = 123`; if `n = 345`, the sum is `345 + 345345 + 345345345 = 345691035`.
+
+Example output using input values `1`, `12`, and `345`:
+```
+Enter an integer: 1
+1 + 11 + 111 = 123
+```
+```
+Enter an integer: 12
+12 + 1212 + 121212 = 122436
+```
+```
+Enter an integer: 345
+345 + 345345 + 345345345 = 345691035
+```
+
+10.	Write a Python program that takes as input a word or sentence and prints the reverse. You MUST use a for loop.
+
+Example output for input `howdy all!`:
+```
+Enter some text: howdy all!
+Reversed: !lla ydwoh
+```
+
+11.	Write a Python program to print the table shown below. For each integer `n` between 2 and 5 (inclusive), print the numbers between `n` and `n * 10` that are multiples of `n`. You MUST use nested loops.
+
+Example output:
+```
+----------------------------------------------- 
+Integer Multiples 
+----------------------------------------------- 
+2       2, 4, 6, 8, 10, 12, 14, 16, 18, 20 
+3       3, 6, 9, 12, 15, 18, 21, 24, 27, 30 
+4       4, 8, 12, 16, 20, 24, 28, 32, 36, 40 
+5       5, 10, 15, 20, 25, 30, 35, 40, 45, 50
+-----------------------------------------------
+```
+
+12.	Write a Python program that takes as input a positive integer then adds and prints all of the digits in the number.
+
+Example output for input values `12` and `8675309`:
+```
+Enter a positive integer: 12
+Sum of the digits: 3
+```
+```
+Enter a positive integer: 8675309
+Sum of the digits: 38
+```
+
+13.	Write a Python program that takes as input a positive integer that contains at least 10 digits, and a single digit. Have your program remove that digit from the initial number and print the result. 
+
+Example output for input values `3479734103487314` and `3`:
+```
+Enter an integer with 10+ digits: 3479734103487314
+Enter a digit: 3
+New number is 479741048714
+```
+
+14.	Write a Python program that takes as input 5 items that are sold in a school cafeteria (name and cost). Then take as input the amount of money that the user has. Print all of the items that the user can afford to buy.
+
+Example output:
+```
+Enter 5 items and their cost
+Item 1: apple 0.50
+Item 2: banana 0.50
+Item 3: milk 1.00
+Item 4: pizza 5.00
+Item 5: hot dog 3.00
+How much money to you have? 2.00
+You can afford apple, banana, or milk
+```
+
+15.	Write a Python program that takes as input a positive integer and then prints all members of the [Fibonacci sequence](https://en.wikipedia.org/wiki/Fibonacci_sequence) up to that number (inclusive).
+
+Example output for input `102`:
+```
+Enter a positive integer: 102
+Here is the Fibonacci sequence up to 102:
+0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89
+```
+Now write a Python program that takes as input a positive integer `n` and then prints the first `n` members of the Fibonacci sequence.
+
+Example output for input `8`:
+```
+Enter a positive integer: 8
+Here are the first 8 members of the Fibonacci sequence:
+0, 1, 1, 2, 3, 5, 8, 13
+```
+
+16.	Write a Python program that takes as input the number of rows and columns of a 2D `m×n` matrix, and prints a list of lists of that matrix. The values of the matrix are the sum of the row and column indices, where indices start at zero. Do NOT use `numpy` or `sympy`. You MUST use a loop.
+
+Example output for input values `3` and `4`:
+```
+Enter the number of rows: 3
+Enter the number of columns: 4
+[[ 0, 1, 2, 3], [1, 2, 3, 4], [2, 3, 4, 5]]
+```
+
+17.	Write a Python program that takes as input a list of numeric values then outputs the second largest value. You may assume that all values are unique. As a challenge, do NOT use the `max()`, `min()`, or `sort()` functions.
+
+Example output:
+```
+Enter some numbers: 1.2 3.4 5.6 7.8 123.456 102 8 6 7 5 3 0 9 -987.6
+The second largest value is 102.0
+```
+
+18.	Write a Python program that will ask the user to input words until the user inputs `stop`, `Stop`, `STOP`, `StOp`, etc. You may assume that all words start with different letters. Have your program print the number of words inputted by the user and the first word if they were arranged in alphabetical order. You may NOT use containers such as lists, dictionaries, sets, or tuples. 
+
+Example output:
+```
+Enter a word: dog
+Enter another word: howdy
+Enter another word: cat
+Enter another word: five
+Enter another word: red
+Enter another word: stoP
+If these 5 words were to be sorted alphabetically, the first word would be "cat"
+```
+
+19.	Write a Python program that asks the user to input 5 integers, all on one line, with a single space in between. The program should check to see if any of the 5 numbers are duplicates of another (i.e. check whether any of the integers were entered more than once.)  If a duplicate is found, the program should print `Duplicates`, otherwise it should print `All Unique`.
+
+Example output for input `1 2 3 3 5`:
+```
+Enter five integers: 1 2 3 3 5
+Duplicates
+```
+
+Example output for input `1 2 3 4 5`:
+```
+Enter five integers: 1 2 3 4 5
+All Unique
+```
+
+20.	Write a Python program that will ask the user to input two integers and calculate the sum of the integers between the inputted numbers (inclusive) that are multiples of 4. If the user enters a second integer that is smaller than the first, print a message and do no calculations. Do NOT use containers such as lists, tuples, dictionaries, or sets.
+
+Example output for inputs `2` and `12`:
+```
+Enter integer 1: 2
+Enter integer 2: 12
+The sum of multiples of 4 between 2 and 12 is: 24
+```
+
+21.	Write a Python program that will repeatedly ask a user to enter names and ages of people, stopping when an age of 0 is entered (and not processing that person).  The program should collect this information, and then output the average age, the name of the oldest person, and the name of the youngest person. You may assume no two people have the same age.
+
+Example output:
+```
+Enter the name and age of the next person: Ritchey 39
+Enter the name and age of the next person: Zoe 6
+...
+Enter the name and age of the next person: Nobody 0
+The average age is 21.3
+Frank is the oldest at 85
+Ada is the youngest at 3
+```
+
+22.	Write a Python program that takes as input positive numbers until a negative value is entered. The program should then output the maximum number, the minimum number, and the average value. Do NOT use containers such as lists, tuples, dictionaries, or sets.
+
+Example output:
+```
+Enter a number: 1.1
+...
+Enter a number: -12
+Maximum: 102.0, Minimum: 0.12, Average: 20.25
+```
+
+23.	Write a Python program that asks the user for an area, then prints out the radius of a circle with that area, and the length of one side of a square with the same area. Format your output to display one decimal place.
+
+Example output for input `5`:
+```
+Enter an area: 5
+A circle with area 5.0 has radius: 1.3
+A square with area 5.0 has side length: 2.2
+```
+
+24.	Write a Python program that allows the user to enter two (2) integers and then prints all of the values between (and including) the starting and ending integers, that are multiples of both 5 and 7.  Format your output nicely with a comma and space between each number.
+
+Example output for inputs `240` and `385`:
+```
+Enter the first integer: 240
+Enter the second integer: 385
+Multiples: 245, 280, 315, 350, 385
+```
+
+25.	Given a list of words stored in the variable `list_words`, write a Python program to print the longest word in the list and its length. You may assume that there is only one word of the longest length in the list.
+
+Example output:
+```
+The longest word "antidisestablishmentarianism" has 28 characters
+```
+
+26.	Write a Python program that takes as input a sentence and prints the sentence with every word reversed.
+
+Example output for input `a man a plan a canal panama`:
+```
+Enter a sentence: a man a plan a canal panama
+Words reversed: a nam a nalp a lanac amanap
+```
+
+27.	The series expansion for $\ln⁡ \left( \frac{1+x}{1-x} \right)$ on the interval $-1<x<1$ is as follows:
+
+$$\sum_{n=1}^{\infty}\frac{2}{2n-1}x^{2n-1}=2x+\frac{2}{3}x^3+\frac{2}{5}x^5+\frac{2}{7}x^7+...$$
+
+Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$. Have your program check that $x$ is within the specified interval, and continue to prompt the user to enter a value until it is. Then compute an approximation for $\ln⁡ \left( \frac{1+x}{1-x} \right)$ using the series expansion summation above. Continue the summation until the absolute value of the term to be added is less than $10^{-6}$. For example, if $x=0.5$ the first term for $n=1$ is $\frac{2}{2 \ast 1-1} 0.5^{2 \ast 1-1}$ or 1. Since this term is greater than $10^{-6}$, add the term to the summation and continue. Eventually one of the terms will be less than $10^{-6}$, and the summation stops and prints the result.
+
+Example output for input `0.5`:
+```
+Enter a value for x: 0.5
+ln((1+x)/(1-x)) is approximately 1.098611131435838
+```
 
 
 
