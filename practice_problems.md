@@ -247,6 +247,317 @@ else:
     print(mystr[4:26], end=" ")
 print("down")
 ```
+```
+# problem 25
+for i in range(1, 4, 2):
+    print(i)
+```
+```
+# problem 26
+for i in range(4):
+    print("Aitor" * i)
+```
+```
+# problem 27
+for i in range(12):
+    if i % 2 != 1 and i % 3 == 0:
+        print(i)
+```
+```
+# problem 28
+n = 1
+p = "A"
+while n < 10:
+    p += p
+    n += 3
+print(n, p)
+```
+```
+# problem 29
+x = 4
+y = "Gig'em Aggies!"
+while x < 100:
+    print(x, y)
+    x *= x – 2
+    y += y
+```
+```
+# problem 30
+x = 2
+y = "A"
+while x < 100:
+    print(x, y)
+    x *= x
+    y += y
+```
+```
+# problem 31
+x = 5
+mysum = 0
+for i in range(4):
+    x *= i
+    mysum += x
+print(x, mysum)
+```
+```
+# problem 32
+for i1 in range(1, 3):
+    for i2 in range(i1 + 1):
+        i1 += 1
+        print(f"{i1}{i2}", end=" ")
+        i2 += 1
+    print()
+```
+```
+# problem 33
+mystr = "Howdy! Welcome to Texas A&M Engineering!"
+print(mystr[:5] + mystr[6] + mystr[-22:-1] + " students! ")
+```
+```
+# problem 34
+a = "Aerospace"
+print(a[0])
+print(len(a) – 1)
+print(len(a) + 0.5 * 3 // 2)
+```
+```
+# problem 35
+a = "Aitor"
+a[1] = "1"
+print(a)
+```
+```
+# problem 36
+a = [1, 2, 3, 4, 5, 56, 67]
+print(a[7])
+```
+```
+# problem 37
+a = "My name is aitor"
+count = 0
+for i in a:
+    if i == "a":
+        print(a[:count+7])
+        print(count)
+    elif i == "i":
+        break
+    else:
+        continue
+    count += 1
+    print(count)
+```
+```
+# problem 38
+mystrs = ["Good Bull", "Whoop", "Hullabaloo", "Howdy", "Gig 'em", "Aggies"]
+mynums = [3, 5, 4, 1, 2]
+for num in mynums:
+    print(mystrs[num], end=" ")
+```
+```
+# problem 39
+mylist = []
+for i in range(5):
+    mylist.append(i ** 2)
+print(mylist[-3:])
+```
+```
+# problem 40
+a = [1, 34, 3]
+b = 2
+a.append(b)
+a.sort()
+print(a)
+```
+```
+# problem 41
+AB = 0
+V = [9, 5, -3, 6, -1, 0]
+for i in range(len(V) – 2):
+    if V[i] < 0:
+        AB += 1
+print("AB =", AB)
+```
+```
+# problem 42
+data = [[[1, 2], [3, 4]], [[5, 6], [7, 8]]]
+print(data[1][0][0])
+```
+```
+# problem 43
+a = [[1, 2, 3, 4], ["a", "b"]]
+for i in a:
+    print(i)
+    print(i[1:100])
+```
+```
+# problem 44
+a = [1, 3, 4, 56, 2, 32, 13, 124, 5534]
+for i in range(len(a)):
+    if a[i] % 2 == 1:
+        print(a[i], i, sep=",", end=":")
+print()
+print(a[-4:])
+```
+```
+# problem 45
+a = 3
+b = [1, 2, 3, 4, 5]
+for i in b:
+    for j in a:
+        print(i, j, end="")
+```
+```
+# problem 46
+a = [12, 89, 45, 12, 67, 3, 4, 9, 20, 34, 45, 67, 199, 67]
+count = 0
+for i in a:
+    if i % 2 == 0:    # What happens if we use i % 5 == 0?
+        for j in range(len(a)):
+            if i == j:
+                continue
+            else:
+                count += 1
+    else:
+        count -= 1
+print(count)
+```
+```
+# problem 47
+a = [12, 89, 45, 12, 67, 3, 4, 9, 20, 34, 45, 67, 199, 67]
+count = 0
+for i in a:
+    if i % 2 == 0:
+        for j in range(len(a)):
+            if i == j:
+                break    # this line is different
+            else:
+                count += 1
+    else:
+        count -= 1
+print(count)
+```
+```
+# problem 48
+a = [12, 89, 45, 12, 67, 3, 4, 9, 20, 34, 45, 67, 199, 67]
+count = 0
+for i in a:
+    if i % 2 == 0:
+        for j in range(len(a)):
+            if i == a[j]:    # this line is different
+                break
+            else:
+                count += 1
+    else:
+        count -= 1
+print(count)
+```
+```
+# problem 49
+a = [12, 89, 45, 12, 67, 3, 4, 9, 20, 34, 45, 67, 199, 67]
+count = 0
+for i in a:
+    if i % 5 == 0:    # this line is different
+        for j in range(len(a)):
+            if i == a[j]:
+                print(i, end=", ")
+                continue    # these 2 lines are different
+            else:
+                count += 1
+    else:
+        count -= 1
+print(count)
+```
+Problem 50<br>
+Which of the following are valid variable names in Python? Choose all that apply.
+- `10_kilos`
+- `mass-kg_`
+- `_10_KG_Mass`
+- `ma$$`
+
+Problem 51<br>
+Will the code below run without an error? If not, find and correct the error.
+```
+side = input("Please enter the side of a square: ")
+a = side ** 2
+print(f"The area of the square is: {a}")
+```
+
+Problem 52<br>
+Starting with the following line of code, write one more line of code that will calculate the radius of a circle with area equal to 6.5 cm^2 and display the result to the console, including a text description.
+```
+from math import *
+<your code goes here>
+```
+
+Problem 53<br>
+What is the data type of the variable `x` after the following line of code is executed?<br>
+`x = str(int("5 + 6"))`
+- Integer
+- Floating-point number
+- Boolean
+- String
+- The code contains an error
+
+Problem 54<br>
+What is the data type of the variable `x` after the following line of code is executed?<br>
+`x = int(float("97.9"))`
+- Integer
+- Floating-point number
+- Boolean
+- String
+- The code contains an error
+
+Problem 55<br>
+Given x = 3 and y = 5, evaluate the following Boolean expressions:<br>
+- `x != y – 2`
+- `x >= 0 and not x < 10`
+- `x < 0 and x < 10`
+- `x >= 0 and x < 2`
+- `x < 0 or y < 5`
+- `not x > 0 or x < 10`
+
+Problem 56<br>
+Which code snippet below correctly finds the number of digits of the sum of two integers? Either value may be positive, negative, or zero.
+
+Examples:
+- 12 + 6 = 18 → 2 digits
+- -12 + 2 = -10 → 2 digits (the negative sign does not count)
+- 0 + 3 = 3 → 1 digit
+
+The following code is executed before each answer below:
+```
+num1 = int(input("Enter first integer: "))
+num2 = int(input("Enter second integer: "))
+numSum = num1 + num2
+```
+
+Answer choices:
+```
+# answer A
+myString = str(numSum)
+strLength = len(myString) – 1
+print(f"number of digits of {numSum} is {strLength}")
+```
+```
+# answer B
+count = 0 
+temp = abs(numSum) 
+while temp > 1: 
+    temp = temp / 10 
+    count = count + 1 
+print(f"number of digits of {numSum} is {count}")
+```
+```
+# answer C
+if numSum < 0: 
+    myString = str(-numSum) 
+else: 
+    myString = str(numSum) 
+strLength = len(myString) 
+print(f"number of digits of {numSum} is {strLength}")
+```
+D.	None of the above
+
 
 ## Code Writing Problems
 stuff
