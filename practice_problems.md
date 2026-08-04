@@ -560,7 +560,110 @@ D.	None of the above
 
 
 ## Code Writing Problems
-stuff
+1.	Write a Python program to take as input 5 birthdays from 5 users (1 each) and output them in chronological order. Dates should be entered with the month and day (not year) in the format "June 6" as a single input per user. You may format the output however you like (including using numbers for the month instead of words). This is a good problem to practice using lists of lists.
+
+Example output:
+```
+User 1 please enter a birthday: December 12
+User 2 please enter a birthday: January 15
+User 3 please enter a birthday: April 12
+User 4 please enter a birthday: November 25
+User 5 please enter a birthday: April 1
+------------------------------------------------
+January 15
+April 1
+April 12
+November 25
+December 12
+```
+
+2.	Write a Python program to play a simplified version of the game hangman. Have User 1 input a secret word with a minimum length of 6. Then, take as input from User 2 one letter at a time until they guess a letter that is not in the secret word. At the end of the program, print out the number of guesses and the secret word.
+
+Example output:
+```
+Enter the secret word: programming
+Guess a letter: n
+Guess another letter: a
+Guess another letter: e
+The secret word is: "programming". You took 3 guesses!
+```
+
+3.	Write a Python program to take as input from the user a student's UIN. If the UIN exists in the list `roster`, have your program output the first and last name of the student, their major, and their GPA. The list `roster` is a list of lists and you may assume that it is already available in the code. An example of its data is shown below.
+```
+roster = [["123004567", ["Joe", "Aggie", "ENGE", 3.50]],
+          ["123004568", ["Jake", "Green", "OCEN", 3.75]],
+          ["123004569", ["Jill", "Apple", "ENGR", 3.25]]]
+```
+Example output for input `123004567`:
+```
+Enter a UIN: 123004567
+Joe Aggie: ENGE, 3.50
+```
+
+4.	Write a Python program that prints out the sum of the even numbers between 2 to 200, inclusive. You must use a loop.
+
+5.	Write a Python program to generate the following patterns exactly as shown **using a single loop** for each pattern.
+```
+a
+bb
+ccc
+dddd
+eeeee
+```
+```
+>
+>>
+>>>
+>>
+>
+```
+```
+***
+**
+*
+**
+***
+```
+```
+ooooo
+ oooo
+  ooo
+   oo
+    o
+```
+```
+xxxx
+xxxo
+xxoo
+xooo
+oooo
+```
+
+6.	Write a Python program that will repeatedly ask a user to input a person's age. The program should continue to ask for input until a negative number is entered, indicating that the user is done inputting data. The program should determine the total number of people and the minimum and maximum ages entered. The results should be printed to the screen using the format shown below. Include the header and align the columns.
+
+Example output:
+```
+Enter an age: 17
+Enter another age: 24
+...
+Enter another age: -1
+Number of people  Minimum age  Maximum age
+32                17           24         
+```
+
+7.	A schematic for converting phone letters to digits mapping is shown in the image below. Write a Python program that prompts the user to enter a 10-character phone number in this format `XXX-XXXXXXX`. Your program should replace the last seven alphabetic characters by their equivalent digits and display the entered phone number in this format `XXX-XXX-XXXX`. For example, if the user enters `800-GOFEDEX`, your program output would convert the number to `800-463-3339`. You may assume that the last seven characters are alphabetic characters from A to Z.
+
+Example output for input `800-GOFEDEX`:
+```
+Enter a phone number in this format XXX-XXXXXXX: 800-GOFEDEX
+800-GOFEDEX is equivalent to 800-463-3339
+```
+
+
+
+
+
+
 
 ## Short Answer Problems
 stuff
