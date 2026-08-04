@@ -896,11 +896,81 @@ Enter a value for x: 0.5
 ln((1+x)/(1-x)) is approximately 1.098611131435838
 ```
 
+28.	The Maclaurin series expansion for $\frac{1}{1-x}$ on the interval $-1<x<1$ is as follows:
 
+$$\sum{n=0}^{\infty}x^n=1+x+x^2+x^3+x^4+...+x^n$$
 
+Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$ then computes an approximation for $\frac{1}{1-x}$ using the series expansion summation above. The summation should continue until the term to be added is less than $10^{-6}$ in absolute value. Hint: Note that each term in the series is $x$ raised to a power, including the first two terms: $x^0=1$ and $x^1=x$.
+
+Example output for input `0.5`:
+```
+Enter a value for x: 0.5
+1/(1-0.5) is approximately 1.9999980926513672
+```
+
+29.	Given a list `xdata` of arbitrary length that contains values of $x$, write a Python program to calculate a $y$ value for each $x$ value using the equation below. Store the calculated $y$ values in a list named `ydata`. Do NOT use `numpy` or `sympy`. Use list functions, methods, and operators.
+$$y=4.12x^2+1.52x-7.1$$
+
+30.	Sheldon Cooper's (of Big Bang Theory) favorite number is 73. One of the reasons is that 73 is a prime number and there are 21 prime numbers between 1 and 73. A prime number is an integer greater than 1 that is not divisible by another integer other than 1 (the only even number that is a prime number is 2; all other prime numbers are odd). Write a Python program to calculate and print the prime numbers between 1 and 73 (but not including 73). Your program will also need to count the prime numbers to see if this is really the 21st prime number.
+
+31.	Write a Python program that takes as input an arbitrary number of masses and corresponding volumes then calculates and prints the density for each pair.
+
+Example output:
+```
+Enter the masses: 10 22.5 30
+Enter the volumes: 5 2 1.5
+The densities are: 2.0, 11.25, 20.0
+```
+
+32.	Write a Python program that takes as input a combination lock (a 4-digit integer) then "solve" the combination. Practice using lists of lists to store the lock.
+
+33.	Write a Python program that takes as input the radius of a circle then calculates and prints the items below. Print the values using two decimal places.
+- The area and perimeter (circumference) of the circle
+- The side length of a square with the same area as the circle
+- The side length of a square with the same perimeter as the circle
+
+Example output for input `1.0`:
+```
+Enter the radius: 1.0
+The circle has area 3.14 and perimeter 6.28
+A square with equal area has side length 1.77
+A square with equal perimeter has side length 1.57
+```
 
 
 ## Short Answer Problems
-stuff
+You won't have problems like this on the exam, but they are great for studying!
+
+1.	What are the differences in the following mathematical operators? `/`, `%`, `//`
+
+2.	How do you format your output to display a number with exactly 3 decimal places?
+
+3.	What are the different assignment operators? Provide an example for each.
+
+4.	List all of the data types we have used in this class so far and provide an example for each. How do you convert between data types?
+
+5.	Briefly explain when it is a good idea to use an `if-elif-else` statement instead of multiple `if` statements. When is it a good idea to nest `if` statements?
+
+6.	Name 3 good reasons for including comments when programming.
+
+7.	Briefly explain why it is bad practice to use the "arch" method of program development. Briefly explain the "pyramid" approach to program development.
+
+8.	What is "debugging"?
+
+9.	Briefly explain when it is best to use a `for` loop vs a `while` loop.
+
+10.	What are the similarities between strings and lists?
+
+11.	Given the string below, write one line of code to convert it into a list of its words.<br>
+`mystr = "Aggie Engineers Rock And Are In High Demand By Industry"`
+
+12.	Given a list `L` of length greater than 10, write the code to create a new list `L_new` containing the 4th through 7th elements of `L`. Next write the code to remove the 2nd, 3rd, and 4th elements of `L`. Next write code to insert a new value as the 2nd element of `L`. 
+
+13.	Please review all lecture examples and quizzes.
+
+14.	Please review examples and activities in your textbook and resources posted on Canvas.
+
+15.	Please review optional labs for more coding practice.
+
 
 Revised Fall 2026 SNR
