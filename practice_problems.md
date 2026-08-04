@@ -183,8 +183,12 @@ if x > 0 and y > 0:
 elif x > 0 or y > 0:
     if x > 0:
         print(x)
+    else:
+        print(y)
 elif x == 0:
-    print(y)
+    print("x == 0")
+else:
+    print(x + y)
 ```
 ```
 # problem 22
@@ -400,7 +404,7 @@ print(a[-4:])
 ```
 ```
 # problem 45
-a = 3
+a = "3"
 b = [1, 2, 3, 4, 5]
 for i in b:
     for j in a:
