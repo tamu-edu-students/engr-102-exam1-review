@@ -223,6 +223,91 @@ for i in range(10):          # 1. initialize the control variable i, 2. continue
 
 A `for` loop is used when you have a known number of iterations, or when you want to iterate through a specific, known set of items. A `while` loop is used when you want to repeat an unknown number of iterations. For example, until a specific value is encountered or a general condition is met.
 
+Range
+- `range(n)` generates the sequence `0, 1, ..., n-2, n-1`
+  - Note that the sequence starts at `0` and contains `n` elements
+  - `range(10)` produces the sequence `0, 1, 2, 3, 4, 5, 6, 7, 8, 9`
+- `range(start, stop)` starts at the value `start` and stops *before* the value `stop`
+  - `range(1, 5)` produces the sequence `1, 2, 3, 4`
+- `range(start, stop, step)` starts at the value `start`, stops *before* the value `stop`, and increments with a step size of `step`
+  - `range(3, 10, 3)` produces the sequence `3, 6, 9`
+
 ## Lists
+Python syntax for lists
+```python
+list_name = [element_0, element_1, ...]
+```
+
+You can append a value (add to the end) using the append list method
+```python
+list_name.append("add this")
+```
+
+You can also append a value using concatenation
+```python
+grades = [87, 93, 75, 100, 82, 91, 85]
+grades += [80] # concatenate a value to the list, MUST be same datatype
+print(grades)
+```
+will output `[87, 93, 75, 100, 82, 91, 85, 80]`
+
+Python syntax for slicing lists
+```python
+list_name[a:b]
+```
+
+The resulting sublist will contain values from index `a` to index `b-1`
+```python
+# index    0   1   2   3   4   5   6
+grades = [87, 93, 75, 100, 82, 91, 85]
+print(grades[1:4])
+```
+will output `[93, 75, 100]`
+
+You can change the step size with `list_name[start:stop:step]`
+```python
+# index    0   1   2   3   4   5   6
+grades = [87, 93, 75, 100, 82, 91, 85]
+print(grades[1:5:2])
+```
+will output `[93, 100]`
+
+List methods
+- `len(x)` will return the number of elements in list `x`, also works on strings
+- `min(x)` will return the minimum value in list `x`
+- `max(x)` will return the maximum value in list `x`
+- `sum(x)` will return the sum of all values in list `x`
+- `mylist.index(value)` will find the index of the first element in the list `mylist` with the matching `value`
+- `mylist.count(value)` will find the number of occurrences of `value` in the list `mylist`
+- `list[start:end]` allows you to slice certain values in a list
+- `mylist.append(value)` will add `value` to the end of `mylist`
+- `mylist.insert(index, value)` will insert `value` at index location `index`
+- `del mylist[index]` will remove the item at index location `index` in `mylist`
+- `mylist.pop()` will remove the last item in `mylist`
+
+Example
+```python
+x = [0, 1, 2, 3]
+print(len(x), min(x), max(x), sum(x))
+```
+will output `4 0 3 6`
+
+Another example
+```python
+mylist = ["a", "b", "c", "d", "e", "a"]
+print(mylist.index("b"), mylist.count("a"), mylist[1:4])
+```
+will output `1 2 ['b', 'c', 'd']`
+
+Yet another example
+```python
+mylist = ["a", "b", "c", "d", "e"]
+del mylist[1]         # removes element "b"
+mylist.pop()          # removes element "e"
+mylist.append("f")    # adds element "f" to end
+mylist.insert(2, "z") # adds element "z" at index 2
+print(mylist)
+```
+will output `['a', 'c', 'z', 'd', 'f']`
 
 Revised Fall 2026 SNR
