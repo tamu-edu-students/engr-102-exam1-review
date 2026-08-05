@@ -165,8 +165,63 @@ Other operators
 - Note: these operators can also work on lists
 
 ## Conditionals
+Python syntax for `if` statement
+```python
+if condition:
+    # do this
+```
+
+If the condition evaluates to `True`, the indented code is executed
+
+Use `if-else` when there are 2 possibilities
+```python
+if condition:
+   # do this
+else:
+   # do this other thing
+```
+
+Use `if-elif-else` when there are more than 2 alternative paths
+```python
+if condition1:
+    # do this first thing
+elif condition2:
+    # do this second thing
+else:
+    # do this third thing if all above conditions are False
+```
+
+Note: You can nest conditional statements
 
 ## Loops
+There are 4 components to a loop:
+1. Initialize a control variable
+2. Determine the continuation condition
+3. Things to do
+4. Update the control variable
+
+A `while` loop (conditional loop) repeats the indented code until the condition is `False`
+```python
+while condition:
+    # do this
+```
+
+Example
+```python
+i = 0                        # 1. initialize the control variable i
+while i < 10:                # 2. continuation condition
+    print("Doing something") # 3. things to do
+    i += 1                   # 4. update the control variable i
+```
+The variables `i`, `j`, and `k` are commonly used as control variables
+
+A `for` loop (ranged loop) repeats the indented code for the specified instances
+```python
+for i in range(10):          # 1. initialize the control variable i, 2. continue for 10 iterations, 4. update the control variable i
+    print("Doing something") # 3. things to do
+```
+
+A `for` loop is used when you have a known number of iterations, or when you want to iterate through a specific, known set of items. A `while` loop is used when you want to repeat an unknown number of iterations. For example, until a specific value is encountered or a general condition is met.
 
 ## Lists
 
