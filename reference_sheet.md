@@ -40,7 +40,7 @@ f-strings
 - `print(f"The value of pi is {pi:.2f}")` will output `The value of pi is 3.14`, you must import pi from the math module first with `from math import *`
 - `f"{2.3:<10}"` will create the string `2.3       `
 - `f"{2.3:>10}"` will create the string `       2.3`
-- `f"{2.3:^10}"` will create the string `   2.3    `
+- `f"{2.3:^10}"` will create the string `    2.3     `
 
 Math functions are imported from the math module
 - `from math import *`
@@ -73,9 +73,17 @@ Values
 - `isbigger = 18 > 6` will store the value `True` in `isbigger`
 - `bigstr = "big" * 5` will store the value `bigbigbigbigbig` in `bigstr`
 
+Special assignment operators
+- Will take the current value of the variable, modify it according to the operator, and reassign the new value
+- `+=` will add the right hand side from the current value
+- `-=` will subtract the right hand side from the current value
+- `*=` will multiply the right hand side from the current value
+- `/=` will divide the right hand side from the current value
+- can also use `//=` for floor division and `%=` for modular division
+
 ## Data types
 | Data Type | Examples |
-| :---: | :---: |
+| :---: | :--- |
 | Integer | `4`, `-2`, `-5`, `10` |
 | Floating-point (float) | `1.999`, `2.0`, `-4.89`, `867.5309` |
 | Boolean | `True` evaluates to `1`, `False` evaluates to `0` |
@@ -111,6 +119,50 @@ The `type` function will tell you the data type of a variable or expression
 - `bool("")` evaluates to `False`
 
 ## Operators
+Mathematical operators
+- `+` addition
+- `-` subtraction
+- `*` multiplication
+- `/` division
+- `**` power / exponent
+- `//` floor division, division without remainder
+  - `7 // 3` evaluates to `2`
+- `%` modulus, remainder from division
+  - `7 % 3` evaluates to `1`
+
+Order of operations (PEMDAS)
+| Convention | Description |
+| :---: | :--- |
+| `()` | Items within parentheses are evaluated first |
+| `**` | Exponentiation operators are evaluated next, the right side of the exponentiation is computed first |
+| `*`, `/`, `//`, `%` | Next to be evaluated are `*`, `/`, `//`, and `%` |
+| `+`, `-` | Finally come `+` and `-` with equal precendence |
+| left-to-right | If more than one operator of equal precedence could be evaluated, evaluation occurs left to right |
+
+Relational operators
+- Compare two values
+- `==` equality
+- `!=` inequality
+- `<` less than
+- `>` greater than
+- `<=` less than or equal to
+- `>=` greater than or equal to
+
+Boolean operators
+- Operate on Boolean values (`True`, `False`)
+- `not` flips the value
+- `and` is `True` if and only if both values are `True`, otherwise `False`
+- `or` is `False` if and only if both values are `False`, otherwise `True`
+- `not` before `and` before `or`
+
+*Mathematical operators > Relational operators > Boolean operators*
+
+Other operators
+- `is` identity operator, this is beyond the scope of ENGR 102
+- `in` membership operator, determines if one string is a substring of another
+  - `"a" in "aggies"` will evaluate to `True`
+  - `"poo" not in "whoop"` will evaluate to `True`
+- Note: these operators can also work on lists
 
 ## Conditionals
 
