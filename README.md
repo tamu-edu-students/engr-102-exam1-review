@@ -5,3 +5,5 @@
 [A set of reference materials can be found here](reference_sheet.md)
 
 These review materials are to help you study. They will NOT be available during the exam. Good luck!!!
+
+Try out [this word search](ENGR_102_Exam1_Word_Search.pdf) for fun!
