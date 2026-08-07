@@ -7,3 +7,5 @@
 These review materials are to help you study. They will NOT be available during the exam. Good luck!!!
 
 Try out [this word search](ENGR_102_Exam1_Word_Search.pdf) for fun!
+
+Also try out [this crossword](ENGR_102_Exam1_Crossword.pdf) for fun!
