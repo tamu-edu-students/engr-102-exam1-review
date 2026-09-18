@@ -160,6 +160,7 @@ elif b == 6:
     z //= 5
 else:
     z += 5
+print(z)
 ```
 ```
 # problem 20
@@ -643,7 +644,7 @@ xooo
 oooo
 ```
 
-6.	Write a Python program that will repeatedly ask a user to input a person's age. The program should continue to ask for input until a negative number is entered, indicating that the user is done inputting data. The program should determine the total number of people and the minimum and maximum ages entered. The results should be printed to the screen using the format shown below. Include the header and align the columns.
+6.	Write a Python program that will repeatedly ask a user to input a person's age. The program should continue to ask for input until a negative number is entered, indicating that the user is done inputting data. Assume at least one valid value is entered before a negative number. The program should determine the total number of people and the minimum and maximum ages entered. Do not include the negative number in your calculations. The results should be printed to the screen using the format shown below. Include the header and align the columns.
 
 Example output:
 ```
@@ -686,7 +687,7 @@ Sum = 14
 ```
 ```
 Enter an integer between 100 and 1000000, inclusive: 12345 
-One odd, one even.
+One odd, one even!
 ```
 
 9.	Write a Python program that takes as input a value of `n` (`n` is a positive integer) and then calculates and prints the sum of `n + nn + nnn`. For example, if `n = 12`, the sum is `12 + 1212 + 121212 = 122436`; if `n = 1`, the sum is `1 + 11 + 111 = 123`; if `n = 345`, the sum is `345 + 345345 + 345345345 = 345691035`.
@@ -739,7 +740,7 @@ Enter a positive integer: 8675309
 Sum of the digits: 38
 ```
 
-13.	Write a Python program that takes as input a positive integer that contains at least 10 digits, and a single digit. Have your program remove that digit from the initial number and print the result. 
+13.	Write a Python program that takes as input a positive integer that contains at least 10 digits, and a single digit. Have your program remove all occurrences of the specified digit from the initial number and print the result. 
 
 Example output for input values `3479734103487314` and `3`:
 ```
@@ -758,7 +759,7 @@ Item 2: banana 0.50
 Item 3: milk 1.00
 Item 4: pizza 5.00
 Item 5: hot dog 3.00
-How much money to you have? 2.00
+How much money do you have? 2.00
 You can afford apple, banana, or milk
 ```
 
@@ -926,7 +927,15 @@ Enter the volumes: 5 2 1.5
 The densities are: 2.0, 11.25, 20.0
 ```
 
-32.	Write a Python program that takes as input a combination lock (a 4-digit integer) then "solve" the combination. Practice using lists of lists to store the lock.
+32.	Write a Python program that takes as input from the user a 4-digit combination, where each digit is between 0 and 9. Represent the four wheels of the lock using a list of lists, where each inner list contains the possible digits 0 through 9 for one wheel. Your program should systematically try possible combinations until it finds the combination entered by the user. When the correct combination is found, print the combination and the number of attempts required. Assume the combination may contain repeated digits. A combination such as `0042` should be treated as a valid four-digit combination. Hint: Take in the combination as a string to preserve leading zeros.
+
+Example Output
+```
+Enter a 4-digit combination: 0042
+Combination found: 0042
+```
+
+Now add to your code to output the number of attempts to find the combination. This value will depend on your solution method to try different combinations.
 
 33.	Write a Python program that takes as input the radius of a circle then calculates and prints the items below. Print the values using two decimal places.
 - The area and perimeter (circumference) of the circle
