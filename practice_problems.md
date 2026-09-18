@@ -513,6 +513,10 @@ What is the data type of the variable `x` after the following line of code is ex
 - The code contains an error
 
 Problem 55<br>
+Write the data type and value of the following code:<br>
+`str(float(str(3 / 2) + str(int(3 / 2)))) * int(int(str(2) + str(7)) / int(10.3))`
+
+Problem 56<br>
 Given x = 3 and y = 5, evaluate the following Boolean expressions:<br>
 - `x != y – 2`
 - `x >= 0 and not x < 10`
@@ -521,7 +525,7 @@ Given x = 3 and y = 5, evaluate the following Boolean expressions:<br>
 - `x < 0 or y < 5`
 - `not x > 0 or x < 10`
 
-Problem 56<br>
+Problem 57<br>
 Which code snippet below correctly finds the number of digits of the sum of two integers? Either value may be positive, negative, or zero.
 
 Examples:
