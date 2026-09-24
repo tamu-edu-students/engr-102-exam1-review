@@ -272,18 +272,22 @@ print(grades[1:5:2])
 ```
 will output `[93, 100]`
 
-List methods
+List methods (may show up on an exam)
 - `len(x)` will return the number of elements in list `x`, also works on strings
 - `min(x)` will return the minimum value in list `x`
 - `max(x)` will return the maximum value in list `x`
 - `sum(x)` will return the sum of all values in list `x`
-- `mylist.index(value)` will find the index of the first element in the list `mylist` with the matching `value`
-- `mylist.count(value)` will find the number of occurrences of `value` in the list `mylist`
 - `list[start:end]` allows you to slice certain values in a list
 - `mylist.append(value)` will add `value` to the end of `mylist`
+- `mylist.sort()` will sort the list from smallest to largest
+
+List methods (reference only, NOT on an exam)
+- `mylist.index(value)` will find the index of the first element in the list `mylist` with the matching `value`
+- `mylist.count(value)` will find the number of occurrences of `value` in the list `mylist`
 - `mylist.insert(index, value)` will insert `value` at index location `index`
 - `del mylist[index]` will remove the item at index location `index` in `mylist`
 - `mylist.pop()` will remove the last item in `mylist`
+- `mylist.remove(value)` will remove the first instance of `value` in `mylist`
 
 Example
 ```python
