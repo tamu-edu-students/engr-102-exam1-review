@@ -907,7 +907,7 @@ ln((1+x)/(1-x)) is approximately 1.098611131435838
 
 28.	The Maclaurin series expansion for $\frac{1}{1-x}$ on the interval $-1<x<1$ is as follows:
 
-$$\sum{n=0}^{\infty}x^n=1+x+x^2+x^3+x^4+...+x^n$$
+$$\sum_{n=0}^{\infty}x^n=1+x+x^2+x^3+x^4+...+x^n$$
 
 Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$ then computes an approximation for $\frac{1}{1-x}$ using the series expansion summation above. The summation should continue until the term to be added is less than $10^{-6}$ in absolute value. Hint: Note that each term in the series is $x$ raised to a power, including the first two terms: $x^0=1$ and $x^1=x$.
 
