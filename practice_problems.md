@@ -897,7 +897,7 @@ Words reversed: a nam a nalp a lanac amanap
 
 $$\sum_{n=1}^{\infty}\frac{2}{2n-1}x^{2n-1}=2x+\frac{2}{3}x^3+\frac{2}{5}x^5+\frac{2}{7}x^7+...$$
 
-Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$. Have your program check that $x$ is within the specified interval, and continue to prompt the user to enter a value until it is. Then compute an approximation for $\ln⁡ \left( \frac{1+x}{1-x} \right)$ using the series expansion summation above. Continue the summation until the absolute value of the term to be added is less than $10^{-6}$. For example, if $x=0.5$ the first term for $n=1$ is $\frac{2}{2 \ast 1-1} 0.5^{2 \ast 1-1}$ or 1. Since this term is greater than $10^{-6}$, add the term to the summation and continue. Eventually one of the terms will be less than $10^{-6}$, and the summation stops and prints the result.
+Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$. Have your program check that $x$ is within the specified interval, and continue to prompt the user to enter a value until it is. Then compute an approximation for $\ln⁡ \left( \frac{1+x}{1-x} \right)$ using the series expansion summation above. Continue the summation until the absolute value of the term to be added is less than $10^{-6}$. For example, if $x=0.5$ the first term for $n=1$ is $\frac{2}{2 \ast 1-1} 0.5^{2 \ast 1-1}$ or 1. Since this term is greater than $10^{-6}$, add the term to the summation and continue. Eventually one of the terms will be less than $10^{-6}$, and the summation stops and prints the result. **Note:** [Check out this page](https://github.com/tamu-edu-students/engr-102-lab-6-team/blob/main/more_on_sums.md) for an explanation of calculating series and summation using loops.
 
 Example output for input `0.5`:
 ```
@@ -909,7 +909,7 @@ ln((1+x)/(1-x)) is approximately 1.098611131435838
 
 $$\sum_{n=0}^{\infty}x^n=1+x+x^2+x^3+x^4+...+x^n$$
 
-Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$ then computes an approximation for $\frac{1}{1-x}$ using the series expansion summation above. The summation should continue until the term to be added is less than $10^{-6}$ in absolute value. Hint: Note that each term in the series is $x$ raised to a power, including the first two terms: $x^0=1$ and $x^1=x$.
+Write a Python program that takes as input a value of $x$ on the interval $-1<x<1$ then computes an approximation for $\frac{1}{1-x}$ using the series expansion summation above. The summation should continue until the term to be added is less than $10^{-6}$ in absolute value. Hint: Note that each term in the series is $x$ raised to a power, including the first two terms: $x^0=1$ and $x^1=x$. **Note:** [Check out this page](https://github.com/tamu-edu-students/engr-102-lab-6-team/blob/main/more_on_sums.md) for an explanation of calculating series and summation using loops.
 
 Example output for input `0.5`:
 ```
