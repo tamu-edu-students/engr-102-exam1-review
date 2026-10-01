@@ -8,6 +8,7 @@ Topics:
 5. [Conditionals](#conditionals)
 6. [Loops](#loops)
 7. [Lists](#lists)
+8. [Strings](#strings)
 
 ## Print and formatting
 Use `"` or `'` for strings
@@ -289,22 +290,12 @@ will output
 [85, 91, 82, 100, 75, 93, 87]
 ```
 
-You can also slice strings
-```python
-mystr = "abcdefghijklmnopqrstuvwxyz"
-print(mystr[3:9:2]) 
-```
-will output
-```
-dfh
-```
-
 List methods (may show up on an exam)
 - `len(x)` will return the number of elements in list `x`, also works on strings
 - `min(x)` will return the minimum value in list `x`
 - `max(x)` will return the maximum value in list `x`
 - `sum(x)` will return the sum of all values in list `x`
-- `list[start:end]` allows you to slice certain values in a list
+- `mylist[start:end]` allows you to slice certain values in the list `mylist`
 - `mylist.append(value)` will add `value` to the end of `mylist`
 - `mylist.sort()` will sort the list from smallest to largest
 
@@ -340,5 +331,43 @@ mylist.insert(2, "z") # adds element "z" at index 2
 print(mylist)
 ```
 will output `['a', 'c', 'z', 'd', 'f']`
+
+## Strings
+You can slice strings similar to how you slice lists
+```python
+name = "Texas A&M   University      1876"
+print(name[6:9], name[-4:])
+```
+will output `A&M 1876`
+
+```python
+mystr = "abcdefghijklmnopqrstuvwxyz"
+print(mystr[3:9:2]) 
+```
+will output `dfh`
+
+You can split a string into a list of strings using `<str>.split()`. By default, this will split on whitespace (space, tab, and newline characters).
+```python
+name = "Texas A&M   University      1876"
+name_list = name.split() # split on the whitespace (spaces) to create a list
+print(name_list)
+```
+will output `['Texas', 'A&M', 'University', '1876']`
+
+You can join a list of strings into a single string using `<str>.join(<list of strings>)`
+```python
+name = "Texas A&M   University      1876"
+name_list = name.split() # split on the whitespace (spaces) to create a list
+new_name = " ".join(name_list) # using exactly one space " "
+print(new_name)
+```
+will output `Texas A&M University 1876`
+
+You can remove leading and trailing whitespace from a string using `<str>.strip()`
+```python
+mystr = "      blue sky   ".strip() # this will remove the spaces at the beginning and end (NOT the middle)
+print(mystr)
+```
+will output `blue sky`
 
 Revised Fall 2026 SNR
