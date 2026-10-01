@@ -243,13 +243,15 @@ You can append a value (add to the end) using the append list method
 list_name.append("add this")
 ```
 
-You can also append a value using concatenation
+You can also append a value using concatenation. Note: You can only concatenate lists with other lists
 ```python
 grades = [87, 93, 75, 100, 82, 91, 85]
-grades += [80] # concatenate a value to the list, MUST be same datatype
+grades += [80] # concatenate a value to the list, put the value in [] to create a list containing that value
+grades += ["a string", "98"] # can also concatenate multiple values at once
+# grades += 100 # this will cause an error (cannot concatenate list with int)
 print(grades)
 ```
-will output `[87, 93, 75, 100, 82, 91, 85, 80]`
+will output `[87, 93, 75, 100, 82, 91, 85, 80, "a string", "98"]`
 
 Python syntax for slicing lists
 ```python
@@ -271,6 +273,31 @@ grades = [87, 93, 75, 100, 82, 91, 85]
 print(grades[1:5:2])
 ```
 will output `[93, 100]`
+
+You can omit the start or stop values and it will slice from the beginning or go to the end
+```python
+# index    0   1   2   3   4   5   6
+grades = [87, 93, 75, 100, 82, 91, 85]
+print(grades[:3]) # this will slice the first 3 values in grades
+print(grades[4:]) # this will slice the last 3 values in grades
+print(grades[::-1]) # this will start at the beginning, go to the end, and print the list backward (negative step size)
+```
+will output
+```
+[87, 93, 75]
+[82, 91, 85]
+[85, 91, 82, 100, 75, 93, 87]
+```
+
+You can also slice strings
+```python
+mystr = "abcdefghijklmnopqrstuvwxyz"
+print(mystr[3:9:2]) 
+```
+will output
+```
+dfh
+```
 
 List methods (may show up on an exam)
 - `len(x)` will return the number of elements in list `x`, also works on strings
